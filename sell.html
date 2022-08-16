@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيع المنتجات السكنية</title>
+    <link rel="stylesheet" href="style3.css">
+ 
+</head>
+<body dir="rtl">
+
+    <nav>
+        <!-- Nav Bar -->
+        <div class="logo">
+            <i class="fa-solid fa-house"></i>
+            <h2>خيالة العقارية</h2>
+        </div>
+
+        
+            <ul class="nav-items">
+                <li class="nav-item"><a href="Index.html" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="login.php" class="nav-link">تسجيل دخول</a></li>
+                <li class="nav-item" id="Active"><a href="#" class="nav-link">البيوت</a>
+                    <ul class="buySell">
+                        <li class="BS"><a href="sell.html" class="BSlink">بيع</a></li>
+                        <li class="BS"><a href="Houses.html" class="BSlink">شراء</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item" id="Active"><a href="#" class="nav-link">الشقق السكنية</a>
+                    <ul class="buySell">
+                        <li class="BS"><a href="sell.html" class="BSlink">بيع</a></li>
+                        <li class="BS"><a href="Apartements.html" class="BSlink">شراء</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="Average.html" class="nav-link">متوسط سعر المتر السكني</a></li>
+                <li class="nav-item"><a href="CallUs.html" class="nav-link">تواصل معنا</a></li>
+            </ul>
+
+    </nav>
+
+
+    <div class="contacts">
+        <a href="https://api.whatsapp.com/send?phone=966544597799&text=">
+            <img src="WA.png" alt="" srcset="" height="30" width="30" class="WA">
+        </a>
+
+        <a href="https://goo.gl/maps/Fx8o3Ba9YUXEssF9A" class="location">
+            <img src="GM.webp" alt="" height="30" width="30">
+        </a>
+    </div>
+
+<!--Contact-->
+
+<div class="contacts">
+    <a href="https://api.whatsapp.com/send?phone=966544597799&text=">
+        <img src="WA.png" alt="" srcset="" height="30" width="30" class="WA">
+    </a>
+
+    <a href="https://goo.gl/maps/Fx8o3Ba9YUXEssF9A" class="location">
+        <img src="GM.webp" alt="" height="30" width="30" class="WA">
+    </a>
+</div>
+
+<!--End of contact-->
+<script type = "text/javascript">
+   
+      
+       function check() {
+        if( document.form.sakan.value == "" ) {
+             alert( "الرجاء ادخال نوع السكن" );
+             document.form.sakan.focus() ;
+             return false;
+          }
+          if( document.form.hay.value == "" ) {
+             alert( "الرجاء ادخال اسم الحي" );
+             document.form.hay.focus() ;
+             return false;
+          }
+          if( document.form.msa7a.value == "" ) {
+             alert( "الرجاء ادخال المساحة" );
+             document.form.msa7a.focus() ;
+             return false;
+          }
+          
+          if( document.form.pic.value == "" ) {
+             alert( "الرجاء ارفاق صورة" );
+             document.form.pic.focus() ;
+             return false;
+          }
+          if( document.form.number.value == "" ) {
+             alert( "الرجاء ادخال رقم الجوال" );
+             document.form.number.focus() ;
+             return false;
+          }
+          
+          
+          return( true );
+       }
+    //-->
+ </script>
+
+<!-- Hero section -->
+
+
+
+
+<section class="hero2">
+
+
+<div class="selling">
+    <h2>
+        يمكنكم ادخال بيانات المنتج السكني في التالي:
+    </h2>
+    <br>
+
+    <form action="#" name="form" class="selling"      onsubmit = "return(check());">
+        <label for="">
+            المنتج السكني:
+            فيلا <input type="radio" name="sakan" id="villa">    
+            شقة <input type="radio" name="sakan" id="apart">
+        </label>
+
+        <br>
+
+        <label for="">
+            الحي: <input type="text" name="hay" id="neighbor">
+        </label>
+
+        <br>
+
+        <label for="">
+            المساحة: <input type="number" min="100" name="msa7a" id="msa7a">
+        </label>
+
+        <br>
+
+        <label for="">
+            صورة المنتج السكني:
+            <input type="file" name="pic" id="picture">
+        </label>
+        <br>
+
+        <label for="">
+            رقم الجوال: <input type="text" name="number" id="phoneNumber">
+        </label>
+<br>
+        <input type="submit" value="ارسل" class="bbtn">
+    </form>
+
+
+</div>
+</section>
+
+<!-- End of hero section-->
+
+<!--Footer section-->
+
+    <section class="footer">
+
+            <div class="upper">
+                <div class="rights">
+                    <p>© 2022 جميع حقوق الطبع والنشر محفوظة لشركة رمالة العقارية.</p>
+                    <p>حي العقيق شارع الامير محمد بن سلمان</p>
+                </div>
+
+                <div class="UPP">
+                    <a href="#" class="GoTop">
+                        الذهاب لأعلى الصفحة
+                    </a>
+                </div>
+            </div>
+
+
+    </div>
+    </section>
+
+    <!--Contact section-->
+
+
+
+
+</body>
+</html>
